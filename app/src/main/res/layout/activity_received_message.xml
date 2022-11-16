@@ -4,31 +4,34 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".ReceivedMessageActivity">
 
-    <EditText
-        android:id="@+id/etMessage"
+    <TextView
+        android:id="@+id/tvLabel"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:hint="@string/hint_message"
-        android:inputType="textPersonName"
+        android:text="@string/label_tv"
+        android:textColor="@color/purple_500"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/btSendMessage"
+    <TextView
+        android:id="@+id/tvMessage"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:padding="16dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:text="@string/text_bt"
+        android:background="@color/design_default_color_primary"
+        android:textColor="@color/white"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etMessage" />
-
+        app:layout_constraintTop_toBottomOf="@+id/tvLabel" />
 </androidx.constraintlayout.widget.ConstraintLayout>
